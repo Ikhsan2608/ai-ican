@@ -91,7 +91,7 @@ class Network(object):
     def load(filename):
         """Load a saved model from a file."""
         with open(filename, "rb") as f:
-            data = pickle.load(f)
+            net = Network(data["sizes"])
         net = Network(data["sizes"])
         net.weights = [np.array(w) for w in data["weights"]]
         net.biases = [np.array(b) for b in data["biases"]]
