@@ -74,4 +74,4 @@ if st.button("Check digit"):
         st.bar_chart(output.flatten(), height=200)
     else:
         st.warning("Please draw a digit first.")
-net = network.Network.load("trained_network.pkl")
+
